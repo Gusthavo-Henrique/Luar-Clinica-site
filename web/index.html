@@ -2,29 +2,283 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Espaço Luar Clínica - Body Piercing Profissional</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Chatbot Luar Clínica</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        footer { margin-top: 40px; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
+        :root {
+            --primary: #6a0dad;
+            --secondary: #8a2be2;
+            --light: #f5f0ff;
+            --dark: #4b0082;
+            --accent: #ff6b6b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            margin: -20px -20px 30px -20px;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: cover;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .last-update {
+            background-color: var(--accent);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--light);
+            position: relative;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+            margin: 20px 0;
+        }
+        
+        .contact-info {
+            background-color: #eef7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .contact-info h3 {
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        
+        .btn-print {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            background-color: white;
+            color: var(--primary);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-print:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        @media print {
+            .btn-print {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            header {
+                padding: 20px 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Espaço Luar Clínica</h1>
-        <p>Body Piercing Profissional em Porto Velho</p>
-    </header>
-    
-    <main>
+    <div class="container">
+        <header>
+            <h1>Política de Privacidade</h1>
+            <div class="subtitle">Chatbot Luar Clínica</div>
+            <div class="last-update">Última atualização: 29 de Maio de 2025</div>
+            <button class="btn-print" onclick="window.print()">Imprimir</button>
+        </header>
+        
         <section>
-            <h2>Contato</h2>
-            <p>WhatsApp: <a href="https://wa.me/556993979351">(69) 9397-9351</a></p>
-            <p>Endereço: Rua Sarah Ibanez, 5350 - Teixeirão, Porto Velho/RO</p>
+            <p>Bem-vindo à política de privacidade do Chatbot Luar Clínica. Esta política explica como coletamos, usamos, compartilhamos e protegemos suas informações pessoais quando você utiliza nosso serviço de agendamento através do WhatsApp.</p>
         </section>
-    </main>
+        
+        <section>
+            <h2>1. Dados que Coletamos</h2>
+            <p>Para realizar seu agendamento, coletamos apenas as informações estritamente necessárias:</p>
+            <ul>
+                <li><strong>Nome completo</strong> - Para identificação em nossa agenda</li>
+                <li><strong>Idade</strong> - Para verificação de atendimento (apenas maiores de 18 anos)</li>
+                <li><strong>Local do procedimento</strong> - Para preparo da equipe e materiais</li>
+                <li><strong>Informações de saúde relevantes</strong> - Apenas para sua segurança durante o procedimento</li>
+                <li><strong>Preferências de data/horário</strong> - Para agendamento</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>Importante:</strong> Não coletamos documentos pessoais (CPF, RG), informações de cartão de crédito, endereço completo ou qualquer outro dado sensível além dos estritamente necessários para o agendamento e segurança do procedimento.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>2. Como Usamos Seus Dados</h2>
+            <p>Suas informações são utilizadas exclusivamente para:</p>
+            <ul>
+                <li>Criar e gerenciar seu agendamento</li>
+                <li>Preparar nossa equipe e materiais para seu procedimento</li>
+                <li>Garantir sua segurança durante o procedimento com base nas informações de saúde fornecidas</li>
+                <li>Enviar lembretes e confirmações de agendamento</li>
+            </ul>
+            <p><strong>Não compartilhamos</strong> seus dados com terceiros e <strong>não utilizamos</strong> suas informações para marketing sem sua permissão explícita.</p>
+        </section>
+        
+        <section>
+            <h2>3. Armazenamento e Segurança</h2>
+            <p>Implementamos medidas rigorosas para proteger suas informações:</p>
+            <ul>
+                <li>Dados armazenados por no máximo <strong>24 horas</strong> após a conclusão do atendimento</li>
+                <li>Informações sensíveis são <strong>mascaradas</strong> em nossos sistemas (ex: apenas primeiro nome e última inicial são exibidos)</li>
+                <li>Conexões seguras (HTTPS) para todas as transmissões de dados</li>
+                <li>Destruição segura de dados após o período de retenção</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>4. Seus Direitos (LGPD)</h2>
+            <p>Sob a Lei Geral de Proteção de Dados (LGPD), você tem direito a:</p>
+            <ul>
+                <li><strong>Acesso</strong> - Solicitar cópia de seus dados pessoais</li>
+                <li><strong>Correção</strong> - Solicitar atualização de informações incorretas</li>
+                <li><strong>Exclusão</strong> - Solicitar a exclusão de seus dados a qualquer momento</li>
+                <li><strong>Portabilidade</strong> - Receber seus dados em formato estruturado</li>
+            </ul>
+            <div class="highlight">
+                <p>Para solicitar exclusão imediata de seus dados durante uma conversa com nosso chatbot, basta digitar: <strong>"EXCLUIR DADOS"</strong></p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>5. Consentimento</h2>
+            <p>Ao utilizar nosso chatbot e fornecer suas informações:</p>
+            <ul>
+                <li>Você concorda com a coleta e uso das informações conforme descrito nesta política</li>
+                <li>Você pode retirar seu consentimento a qualquer momento solicitando a exclusão de seus dados</li>
+                <li>Para procedimentos que envolvam informações de saúde, solicitamos um consentimento adicional durante a conversa</li>
+            </ul>
+        </section>
+        
+        <div class="contact-info">
+            <h3>Contato do Encarregado de Proteção de Dados</h3>
+            <p>Se tiver dúvidas sobre esta política ou desejar exercer seus direitos LGPD:</p>
+            <p><strong>Email:</strong> admin@luarclinica.com.br</p>
+            <p><strong>WhatsApp:</strong> +55 69 9397-9351</p>
+            <p><strong>Horário de atendimento:</strong>Somente por agendamento</p>
+        </div>
+        
+        <footer>
+            <p>© 2025 Luar Clínica - Todos os direitos reservados</p>
+            <p>Esta política pode ser atualizada periodicamente. A versão mais recente estará sempre disponível em nosso site.</p>
+        </footer>
+    </div>
     
-    <footer>
-        <p><strong>CNPJ:</strong> 52.763.023/0001-51</p>
-        <p>© 2024 Espaço Luar Clínica LTDA - Todos os direitos reservados</p>
-    </footer>
+    <script>
+        // Atualiza automaticamente o ano no footer
+        document.addEventListener('DOMContentLoaded', function() {
+            const year = new Date().getFullYear();
+            document.querySelector('footer p:first-child').innerHTML = 
+                `© ${year} Luar Clínica - Todos os direitos reservados`;
+        });
+    </script>
 </body>
 </html>
